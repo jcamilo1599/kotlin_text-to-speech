@@ -2,10 +2,15 @@ package com.worsof.text_player
 
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.Surface
 import androidx.compose.runtime.*
+import androidx.compose.ui.Modifier
 import com.worsof.text_player.ui.presentation.App
+import com.worsof.text_player.ui.theme.TextPlayerTheme
 import java.util.*
 
 class MainActivity : ComponentActivity(), TextToSpeech.OnInitListener {
@@ -35,9 +40,19 @@ class MainActivity : ComponentActivity(), TextToSpeech.OnInitListener {
         }
 
         setContent {
-            App(tts, languages, selectedLanguage) { newLocale ->
-                selectedLanguage = newLocale
-                tts?.language = selectedLanguage
+            TextPlayerTheme {
+                Surface(modifier = Modifier.fillMaxSize()) {
+                    App(tts, languages, selectedLanguage) { newLang ->
+                        selectedLanguage = newLang
+                        tts?.language = selectedLanguage
+
+                        Toast.makeText(
+                            this,
+                            "Idioma de reproducción: ${newLang.displayName}",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
+                }
             }
         }
     }

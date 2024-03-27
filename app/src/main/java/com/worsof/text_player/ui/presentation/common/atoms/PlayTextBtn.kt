@@ -1,4 +1,4 @@
-package com.worsof.text_player.ui.presentation.common
+package com.worsof.text_player.ui.presentation.common.atoms
 
 import android.speech.tts.TextToSpeech
 import androidx.compose.foundation.layout.Row
