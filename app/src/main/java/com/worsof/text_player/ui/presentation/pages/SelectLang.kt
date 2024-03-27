@@ -17,8 +17,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.worsof.text_player.R
 import java.util.Locale
 
 @Composable
@@ -42,7 +44,7 @@ fun SelectLang(
             OutlinedTextField(
                 value = filterText.value,
                 onValueChange = { filterText.value = it },
-                label = { Text("Filtrar idiomas") },
+                label = { Text(text = stringResource(id = R.string.filter_lang)) },
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(8.dp)
@@ -63,7 +65,7 @@ fun SelectLang(
                             if (selectedLanguage == filteredLanguages[index]) {
                                 Icon(
                                     Icons.Filled.Done,
-                                    contentDescription = "Idioma seleccionado",
+                                    contentDescription = stringResource(id = R.string.playback_lang),
                                 )
                             }
                         }

@@ -10,14 +10,18 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.worsof.text_player.R
 import com.worsof.text_player.ui.presentation.common.atoms.CustomCard
 import java.util.Locale
 
 @Composable
 fun SelectLangMolecule(selectedLanguage: Locale, navController: NavController) {
+    val lang = stringResource(id = R.string.lang)
+
     CustomCard(content = {
         Column(
             modifier = Modifier.padding(
@@ -28,7 +32,7 @@ fun SelectLangMolecule(selectedLanguage: Locale, navController: NavController) {
             Row(modifier = Modifier.fillMaxWidth()) {
                 Spacer(modifier = Modifier.weight(1f))
                 Text(
-                    text = "Idioma: ${selectedLanguage.displayName}",
+                    text = "$lang: ${selectedLanguage.displayName}",
                     fontWeight = FontWeight.Black,
                 )
             }
@@ -42,7 +46,7 @@ fun SelectLangMolecule(selectedLanguage: Locale, navController: NavController) {
                 Button(
                     onClick = { navController.navigate("selectLang") },
                     content = {
-                        Text(text = "CAMBIAR")
+                        Text(text = stringResource(id = R.string.change))
                     }
                 )
             }

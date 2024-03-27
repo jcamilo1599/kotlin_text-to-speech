@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Reprodutor de Texto</string>
+    <string name="playback_lang">Idioma de reprodução</string>
+    <string name="filter_lang">Filtrar idiomas</string>
+    <string name="play">Reproducir</string>
+    <string name="enter_text_here">Digite o texto aqui…</string>
+    <string name="lang">Idioma</string>
+    <string name="change">MUDAR</string>
+</resources>
