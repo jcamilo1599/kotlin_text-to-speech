@@ -65,7 +65,7 @@ fun SelectLang(
                             if (selectedLanguage == filteredLanguages[index]) {
                                 Icon(
                                     Icons.Filled.Done,
-                                    contentDescription = stringResource(id = R.string.playback_lang),
+                                    contentDescription = "",
                                 )
                             }
                         }

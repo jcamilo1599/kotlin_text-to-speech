@@ -46,11 +46,9 @@ class MainActivity : ComponentActivity(), TextToSpeech.OnInitListener {
                         selectedLanguage = newLang
                         tts?.language = selectedLanguage
 
-                        val playbackLang = R.string.playback_lang
-
                         Toast.makeText(
                             this,
-                            "$playbackLang: ${newLang.displayName}",
+                            newLang.displayName,
                             Toast.LENGTH_SHORT
                         ).show()
                     }

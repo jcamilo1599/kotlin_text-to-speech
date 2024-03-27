@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Text Player</string>
-    <string name="playback_lang">Playback language</string>
     <string name="filter_lang">Filter languages</string>
     <string name="play">Play</string>
     <string name="enter_text_here">Enter text here…</string>
