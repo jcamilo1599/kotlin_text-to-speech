@@ -1,4 +1,4 @@
-package com.worsof.text_player.ui.presentation.common.molecules
+package com.faacil.text_player.ui.presentation.common.molecules
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -14,8 +14,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.worsof.text_player.R
-import com.worsof.text_player.ui.presentation.common.atoms.CustomCard
+import com.faacil.text_player.R
+import com.faacil.text_player.ui.presentation.common.atoms.CustomCard
 import java.util.Locale
 
 @Composable

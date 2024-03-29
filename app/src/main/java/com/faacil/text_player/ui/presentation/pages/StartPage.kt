@@ -1,4 +1,4 @@
-package com.worsof.text_player.ui.presentation.pages
+package com.faacil.text_player.ui.presentation.pages
 
 import android.speech.tts.TextToSpeech
 import androidx.compose.foundation.gestures.detectTapGestures
@@ -20,9 +20,9 @@ import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.worsof.text_player.ui.presentation.common.molecules.SelectLangMolecule
-import com.worsof.text_player.ui.presentation.common.atoms.PlayTextBtn
-import com.worsof.text_player.ui.presentation.common.atoms.TextEntryField
+import com.faacil.text_player.ui.presentation.common.molecules.SelectLangMolecule
+import com.faacil.text_player.ui.presentation.common.atoms.PlayTextBtn
+import com.faacil.text_player.ui.presentation.common.atoms.TextEntryField
 import java.util.Locale
 
 @Composable

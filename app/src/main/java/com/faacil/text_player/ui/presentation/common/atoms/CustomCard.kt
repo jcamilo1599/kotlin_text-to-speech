@@ -1,4 +1,4 @@
-package com.worsof.text_player.ui.presentation.common.atoms
+package com.faacil.text_player.ui.presentation.common.atoms
 
 import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.fillMaxSize

@@ -1,4 +1,4 @@
-package com.worsof.text_player.ui.presentation
+package com.faacil.text_player.ui.presentation
 
 import android.speech.tts.TextToSpeech
 import androidx.compose.foundation.layout.Column
@@ -10,9 +10,9 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.worsof.text_player.ui.presentation.common.organisms.AppBar
-import com.worsof.text_player.ui.presentation.pages.SelectLang
-import com.worsof.text_player.ui.presentation.pages.StartPage
+import com.faacil.text_player.ui.presentation.common.organisms.AppBar
+import com.faacil.text_player.ui.presentation.pages.SelectLang
+import com.faacil.text_player.ui.presentation.pages.StartPage
 import java.util.Locale
 
 @Composable

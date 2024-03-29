@@ -1,4 +1,4 @@
-package com.worsof.text_player.ui.presentation.common.organisms
+package com.faacil.text_player.ui.presentation.common.organisms
 
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
@@ -10,7 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import com.worsof.text_player.R
+import com.faacil.text_player.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

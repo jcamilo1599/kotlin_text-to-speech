@@ -4,15 +4,15 @@ plugins {
 }
 
 android {
-    namespace = "com.worsof.text_player"
+    namespace = "com.faacil.text_player"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.worsof.text_player"
+        applicationId = "com.faacil.text_player"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
-        versionName = "1.0"
+        versionName = "1.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {

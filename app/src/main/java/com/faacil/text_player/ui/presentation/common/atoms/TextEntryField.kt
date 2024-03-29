@@ -1,4 +1,4 @@
-package com.worsof.text_player.ui.presentation.common.atoms
+package com.faacil.text_player.ui.presentation.common.atoms
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.OutlinedTextField
@@ -6,7 +6,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import com.worsof.text_player.R
+import com.faacil.text_player.R
 
 @Composable
 fun TextEntryField(text: String, onTextChange: (String) -> Unit) {

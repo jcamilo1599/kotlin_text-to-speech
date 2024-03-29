@@ -1,4 +1,4 @@
-package com.worsof.text_player
+package com.faacil.text_player
 
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
@@ -9,8 +9,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
-import com.worsof.text_player.ui.presentation.App
-import com.worsof.text_player.ui.theme.TextPlayerTheme
+import com.faacil.text_player.ui.presentation.App
+import com.faacil.text_player.ui.theme.TextPlayerTheme
 import java.util.*
 
 class MainActivity : ComponentActivity(), TextToSpeech.OnInitListener {
@@ -40,7 +40,7 @@ class MainActivity : ComponentActivity(), TextToSpeech.OnInitListener {
         }
 
         setContent {
-            TextPlayerTheme {
+            TextPlayerTheme(dynamicColor = false) {
                 Surface(modifier = Modifier.fillMaxSize()) {
                     App(tts, languages, selectedLanguage) { newLang ->
                         selectedLanguage = newLang

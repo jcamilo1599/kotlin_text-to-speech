@@ -1,4 +1,4 @@
-package com.worsof.text_player.ui.theme
+package com.faacil.text_player.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
