@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Reproductor de Texto</string>
+    <string name="app_name">Texto a voz</string>
     <string name="filter_lang">Filtrar idiomas</string>
     <string name="play">Reproducir</string>
     <string name="enter_text_here">Ingresa el texto aquí…</string>
